@@ -124,6 +124,9 @@ h1, h2, h3, h4, h5, h6 {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+  #topbar .contact-info i span {
+    font-size: 12px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -719,7 +722,26 @@ h1, h2, h3, h4, h5, h6 {
   .breadcrumbs ol li {
     display: inline-block;
   }
+  .hero-section{
+    height: 65vh !important;
+  }
+  .hero-section .carousel-inner{
+    height: 100% !important;
+  }
+  .hero-section .carousel-item{
+    height: 65vh !important;
+  }
+  .carousel-item img{
+    height: 65vh !important;
+  }
+  .banner-section{
+    width: 90% !important;
+  }
+  .banner-section h1{
+    font-size: 24px;
+  }
 }
+
 
 /*--------------------------------------------------------------
 # About
@@ -803,10 +825,13 @@ h1, h2, h3, h4, h5, h6 {
 .about .content ul {
   list-style: none;
   padding: 0;
+  margin-top: 10px;
 }
 
 .about .content ul li {
   padding-bottom: 10px;
+  display: flex !important;
+  gap: 7px !important;
 }
 
 .about .content ul i {
@@ -1030,6 +1055,25 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
+.gallery-div{
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr 1fr !important;
+}
+
+@media (max-width: 1024px) {
+  .gallery-div{
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+@media (max-width: 576px) {
+  .gallery-div{
+    grid-template-columns: 1fr !important;
+  }
+  .specials .special-meals{
+    text-align: start !important;
+  }
+}
+
 @media (max-width: 992px) {
   .specials .nav-link {
     border: 0;
@@ -1038,6 +1082,7 @@ h1, h2, h3, h4, h5, h6 {
   .about .about-img {
     height: 350px;
   }
+  
 }
 
 /*--------------------------------------------------------------
@@ -1359,12 +1404,10 @@ h1, h2, h3, h4, h5, h6 {
 .contact .info i {
   font-size: 20px;
   float: left;
-  width: 44px;
-  height: 44px;
   
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
 }
@@ -1783,9 +1826,9 @@ body {
     margin-bottom: 10px;
   }
 
-  .contact .info {
+  /* .contact .info {
     text-align: center;
-  }
+  } */
 }
 
 /* 💻 Small Laptops (max-width: 992px) */
